@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 import './Header.css';
+import { PhoneFilled } from '@ant-design/icons';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import TwoWheelerIcon from '@mui/icons-material/TwoWheeler';
+import SellIcon from '@mui/icons-material/Sell';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,8 +18,12 @@ const Header = () => {
         <div className="container">
           <div className="header-top-content">
             <div className="contact-info">
-              <span className="phone">📞 +91 88007 79391</span>
+              <span className="phone" style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+                <LocalPhoneIcon style={{ color: "green" }} />
+                +916206601025
+              </span>
             </div>
+
             <div className="header-actions">
               <Link to="/offers" className="header-link">Offers</Link>
               <Link to="/reviews" className="header-link">Reviews</Link>
@@ -25,15 +33,15 @@ const Header = () => {
           </div>
         </div>
       </div>
-      
+
       <nav className="navbar">
         <div className="container">
           <div className="nav-content">
             <Link to="/" className="logo">
-              <span className="logo-icon">🏍️</span>
+              <span className="logo-icon"><TwoWheelerIcon style={{ color: "red" }} /></span>
               <span className="logo-text">RideTrailRentals</span>
             </Link>
-            
+
             <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
               <li><Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link></li>
               <li className="dropdown">
@@ -51,9 +59,9 @@ const Header = () => {
 
             <div className="nav-actions">
               <button className="cart-btn" onClick={() => navigate('/cart')}>
-                🛒 Cart {cart.length > 0 && <span className="cart-badge">{cart.length}</span>}
+              <SellIcon style={{ color: "white",height:'18px' }} /> Cart {cart.length > 0 && <span className="cart-badge">{cart.length}</span>}
               </button>
-              <button 
+              <button
                 className="menu-toggle"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
               >

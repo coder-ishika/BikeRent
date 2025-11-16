@@ -34,8 +34,8 @@ const Home = () => {
           <p>Rent from India's Largest Fleet of Motorcycles, Trusted by millions.</p>
           
           <div className="hero-tabs">
-            <button className="tab active">Rent Bikes</button>
-            <button className="tab">Guided Tours</button>
+            <button className="tab active" onClick={() => navigate('/bikes')}>Rent Bikes</button>
+            <button className="tab" onClick={() => navigate('/tours')}>Guided Tours</button>
           </div>
 
           <form className="search-form" onSubmit={handleSearch}>
