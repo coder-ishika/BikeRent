@@ -47,7 +47,7 @@ const Footer = () => {
             <h3>Contact</h3>
             <div className="contact-info">
               <p>📧 Email Us</p>
-              <p>📞 +91 88007 79391</p>
+              <p>📞+916206601025</p>
               <div className="social-links">
                 <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">📘</a>
                 <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">📷</a>
