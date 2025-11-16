@@ -30,7 +30,7 @@ const Home = () => {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
-          <h1>Rent Bike In Greater Noida, Noida</h1>
+          <h1>Rent your bike from the startup made by ITs Engineering college students</h1>
           <p>Rent from India's Largest Fleet of Motorcycles, Trusted by millions.</p>
           
           <div className="hero-tabs">

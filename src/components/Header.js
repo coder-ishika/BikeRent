@@ -31,7 +31,7 @@ const Header = () => {
           <div className="nav-content">
             <Link to="/" className="logo">
               <span className="logo-icon">🏍️</span>
-              <span className="logo-text">BikeRent</span>
+              <span className="logo-text">RideTrailRentals</span>
             </Link>
             
             <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
