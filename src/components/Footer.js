@@ -59,10 +59,10 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2025 BikeRent Services Pvt Ltd. All rights reserved.</p>
-          <p>Powered by Sun Programs</p>
+          <p>&copy; 2025 RideTrailRentals Services Pvt Ltd. All rights reserved.</p>
+          <p>Powered by ITS Engineering College</p>
         </div>
-      </div>
+      </div> 
     </footer>
   );
 };

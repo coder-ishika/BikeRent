@@ -195,7 +195,7 @@ export const bikes = [
     name: 'CBZ Xtreme',
     brand: 'Hero',
     price: 599,
-    image: 'https://2.imimg.com/data2/KE/TV/MY-4117474/hero-honda-cbz-xtreme-250x250.jpg',
+    image: 'https://cdn.bikedekho.com/processedimages/hero/xtreme-125r/source/cbz-xtreme68c8080e2422c.jpg',
     category: 'Motorcycle',
     rating: 4.6,
     reviews: 312,
