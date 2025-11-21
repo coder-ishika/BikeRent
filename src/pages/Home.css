@@ -9,6 +9,10 @@
   text-align: center;
 }
 
+.dark-mode .hero {
+  background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+}
+
 .hero-content {
   max-width: 900px;
   margin: 0 auto;
@@ -57,6 +61,11 @@
   color: #333;
 }
 
+.dark-mode .search-form {
+  background: #2d2d2d;
+  color: #e0e0e0;
+}
+
 .form-row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -75,6 +84,10 @@
   color: #555;
 }
 
+.dark-mode .form-group label {
+  color: #e0e0e0;
+}
+
 .form-group select,
 .form-group input {
   padding: 12px;
@@ -82,6 +95,15 @@
   border-radius: 8px;
   font-size: 16px;
   transition: border-color 0.3s;
+  background: white;
+  color: #333;
+}
+
+.dark-mode .form-group select,
+.dark-mode .form-group input {
+  background: #1a1a1a;
+  border-color: #444;
+  color: #e0e0e0;
 }
 
 .form-group select:focus,
@@ -113,11 +135,19 @@
   background: #f8f9fa;
 }
 
+.dark-mode .benefits {
+  background: #1a1a1a;
+}
+
 .benefits h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 50px;
   color: #333;
+}
+
+.dark-mode .benefits h2 {
+  color: #fff;
 }
 
 .benefits-grid {
@@ -135,6 +165,11 @@
   transition: transform 0.3s;
 }
 
+.dark-mode .benefit-card {
+  background: #2d2d2d;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
 .benefit-card:hover {
   transform: translateY(-5px);
 }
@@ -150,9 +185,17 @@
   color: #333;
 }
 
+.dark-mode .benefit-card h3 {
+  color: #fff;
+}
+
 .benefit-card p {
   color: #666;
   line-height: 1.6;
+}
+
+.dark-mode .benefit-card p {
+  color: #b0b0b0;
 }
 
 .popular-models {
@@ -164,6 +207,14 @@
   font-size: 2.5rem;
   margin-bottom: 50px;
   color: #333;
+}
+
+.dark-mode .popular-models {
+  background: #121212;
+}
+
+.dark-mode .popular-models h2 {
+  color: #fff;
 }
 
 .bikes-grid {
@@ -198,11 +249,19 @@
   background: #f8f9fa;
 }
 
+.dark-mode .reviews-section {
+  background: #1a1a1a;
+}
+
 .reviews-section h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 50px;
   color: #333;
+}
+
+.dark-mode .reviews-section h2 {
+  color: #fff;
 }
 
 .reviews-grid {
@@ -218,6 +277,11 @@
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
+.dark-mode .review-card {
+  background: #2d2d2d;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
 .stars {
   font-size: 20px;
   margin-bottom: 15px;
@@ -230,6 +294,10 @@
   font-style: italic;
 }
 
+.dark-mode .review-card p {
+  color: #b0b0b0;
+}
+
 .reviewer {
   display: flex;
   flex-direction: column;
@@ -240,13 +308,29 @@
   color: #333;
 }
 
+.dark-mode .reviewer strong {
+  color: #fff;
+}
+
 .reviewer span {
   color: #999;
   font-size: 14px;
 }
 
+.dark-mode .reviewer span {
+  color: #777;
+}
+
 .how-it-works {
   padding: 80px 20px;
+}
+
+.how-it-works {
+  background: #fff;
+}
+
+.dark-mode .how-it-works {
+  background: #121212;
 }
 
 .how-it-works h2 {
@@ -254,6 +338,10 @@
   font-size: 2.5rem;
   margin-bottom: 50px;
   color: #333;
+}
+
+.dark-mode .how-it-works h2 {
+  color: #fff;
 }
 
 .steps-grid {
@@ -270,6 +358,11 @@
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   position: relative;
   transition: transform 0.3s;
+}
+
+.dark-mode .step-card {
+  background: #2d2d2d;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 .step-card:hover {
@@ -304,15 +397,27 @@
   color: #333;
 }
 
+.dark-mode .step-card h3 {
+  color: #fff;
+}
+
 .step-card p {
   color: #666;
   line-height: 1.6;
+}
+
+.dark-mode .step-card p {
+  color: #b0b0b0;
 }
 
 .stats-section {
   padding: 60px 20px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
+}
+
+.dark-mode .stats-section {
+  background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
 }
 
 .stats-grid {

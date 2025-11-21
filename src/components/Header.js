@@ -1,15 +1,19 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
+import { useTheme } from '../context/ThemeContext';
 import './Header.css';
 import { PhoneFilled } from '@ant-design/icons';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import TwoWheelerIcon from '@mui/icons-material/TwoWheeler';
 import SellIcon from '@mui/icons-material/Sell';
+import Brightness4Icon from '@mui/icons-material/Brightness4';
+import Brightness7Icon from '@mui/icons-material/Brightness7';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { cart } = useCart();
+  const { isDarkMode, toggleTheme } = useTheme();
   const navigate = useNavigate();
 
   return (
@@ -27,8 +31,7 @@ const Header = () => {
             <div className="header-actions">
               <Link to="/offers" className="header-link">Offers</Link>
               <Link to="/reviews" className="header-link">Reviews</Link>
-              <Link to="/download" className="header-link">Download App</Link>
-              <Link to="/login" className="header-link">Login / Register</Link>
+              <Link to="/auth" className="header-link">Login / Register</Link>
             </div>
           </div>
         </div>
@@ -58,6 +61,9 @@ const Header = () => {
             </ul>
 
             <div className="nav-actions">
+              <button className="theme-toggle" onClick={toggleTheme} title={isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}>
+                {isDarkMode ? <Brightness7Icon /> : <Brightness4Icon />}
+              </button>
               <button className="cart-btn" onClick={() => navigate('/cart')}>
               <SellIcon style={{ color: "white",height:'18px' }} /> Cart {cart.length > 0 && <span className="cart-badge">{cart.length}</span>}
               </button>
